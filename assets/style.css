@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: darkgray;
+}
+
+.container {
+    background-color: white;
+    width: 35%;
+    margin-left: 32em;
+    font-size: large;
+}
+
+.inputs {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+    margin-bottom: 50px;
+}
+
+.results {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

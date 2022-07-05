@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Tax calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="inputs">
+    
+            <table>
+                <tr>
+                    <td>PAY PERIOD:</td>
+                    <td>
+                        <input type="radio" name="pay" id="monthPay">Month
+                        <input type="radio" name="pay" id="yearPay">Year
+                    </td>
+                </tr>
+                <tr>
+                    <td>BASIC SALARY:</td>
+                    <td>
+                        <input type="text" id="txtBasicSalary"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>BENEFITS (BONUS, ALLOWANCE):</td>
+                    <td>
+                        <input type="text" id="txtBenefits">
+                    </td>
+                </tr>
+                <tr>
+                    <td>DEDUCT NSSF:</td>
+                    <td>
+                        <input type="radio" name="nssf" id="nssfYes">Yes
+                        <input type="radio" name="nssf" id="nssfNo">No
+                    </td>
+                </tr>
+                <tr>
+                    <td>NSSF RATES:</td>
+                    <td>
+                        <input type="radio" name="rates" id="newRate">New nssf rates
+                        <input type="radio" name="rates" id="oldRate">Old nssf rates
+                    </td>
+                </tr>
+                <tr>
+                    <td>DEDUCT NHIF:</td>
+                    <td>
+                        <input type="radio" name="nhif" id="nhYes">Yes
+                        <input type="radio" name="nhif" id="nhNo">No
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Calculate" style="margin-left:170px; font-size: large; background-color: rgba(214, 37, 37, 0.8);">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="results">
+            <table border="2">
+                <tr>
+                    <td>INCOME BEFORE PENSION DEDUCTION</td>
+                    <td>KSH:0</td>
+                </tr>
+                <tr>
+                    <td>DEDUCTIBLE NSSF PENSION CONTRIBUTION</td>
+                    <td>KSH:0</td>
+                </tr>
+                <tr>
+                    <td>INCOME AFTER PENSION DEDUCTIONS</td>
+                    <td>KSH:0</td>
+                </tr>
+                <tr>
+                    <td>BENEFITS IN KIND</td>
+                    <td>KSH:0</td>
+                </tr>
+                <tr>
+                    <td>TAXABLE INCOME</td>
+                    <td>KSH:0</td>
+                </tr>
+                <tr>
+                    <td>PAYE: TAX ON TAXABLE INCOME</td>
+                    <td>KSH:0</td>
+                </tr>
+                <tr>
+                    <td>PERSONAL RELIEF</td>
+                    <td>KSH:0</td>
+                </tr>
+                <tr>
+                    <td>TAX NET OFF RELIEF</td>
+                    <td>KSH:0</td>
+                </tr>
+                <tr>
+                    <td>PAYE</td>
+                    <td>KSH:0</td>
+                </tr>
+                <tr>
+                    <td>CHARGABLE INCOME</td>
+                    <td>KSH:0</td>
+                </tr>
+                <tr>
+                    <td>NHIF CONTRIBUTION</td>
+                    <td>KSH:0</td>
+                </tr>
+                <tr>
+                    <td>NET PAY</td>
+                    <td>KSH:0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="/assets/main.js"></script>
+</body>
+</html>
